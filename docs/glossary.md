@@ -1,13 +1,13 @@
-# Glossary
+# Glosario
 
-Shared glossary of the project. Terms are added by the Analyst and the Mentor.
-Every entry must be validated by an experienced person before it is final.
+Glosario compartido del proyecto. Los términos los agregan el Analyst y el Mentor.
+Toda entrada debe ser validada por una persona con experiencia antes de considerarse definitiva.
 
-## Entry format
+## Formato de cada entrada
 
-### Term (English name)
-- **Definition:** general meaning of the term, in simple English.
-- **In this project:** how the term is used here, with its source (meeting or document).
-- **Status:** unverified | validated
+### Término (nombre en inglés)
+- **Definición:** significado general del término, en palabras simples.
+- **En este proyecto:** cómo se usa aquí, con su fuente (reunión o documento).
+- **Estado:** no verificado | validado
 
-## Terms
+## Términos

@@ -1,14 +1,14 @@
-# Open Questions
+# Preguntas abiertas
 
-Decisions and doubts that are not resolved yet.
-To close a question, move it to "Resolved" and link the ADR or document that answers it.
+Decisiones y dudas que todavía no se resuelven.
+Para cerrar una pregunta, pásala a "Resueltas" y enlaza el ADR o documento que la responde.
 
-## Open
+## Abiertas
 
-| ID | Question | Source | Risk | Owner |
+| ID | Pregunta | Fuente | Riesgo | Responsable |
 | --- | --- | --- | --- | --- |
 
-## Resolved
+## Resueltas
 
-| ID | Question | Answer | Reference |
+| ID | Pregunta | Respuesta | Referencia |
 | --- | --- | --- | --- |
