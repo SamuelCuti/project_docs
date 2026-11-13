@@ -6,7 +6,7 @@ set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 
 echo "This will DELETE:"
-echo " - every .md file in docs/meeting-notes/"
+echo " - every .md file in docs/meeting-notes/, docs/adr/, docs/risks/ and docs/learning/"
 echo " - docs/requirements/requirements.md"
 echo "and RESET to empty templates:"
 echo " - docs/glossary.md"
@@ -15,9 +15,14 @@ echo "It will NOT touch inbox/, .github/ or scripts/."
 read -r -p "Type RESET to continue: " answer
 [ "$answer" = "RESET" ] || { echo "Cancelled."; exit 1; }
 
-rm -f docs/meeting-notes/*.md
+for dir in meeting-notes adr risks learning; do
+  mkdir -p "docs/$dir"
+  rm -f docs/"$dir"/*.md
+  touch "docs/$dir/.gitkeep"
+done
 rm -f docs/requirements/requirements.md
-touch docs/meeting-notes/.gitkeep docs/requirements/.gitkeep
+mkdir -p docs/requirements
+touch docs/requirements/.gitkeep
 
 cat > docs/glossary.md <<'EOF'
 # Glosario
